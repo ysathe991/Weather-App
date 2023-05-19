@@ -68,7 +68,7 @@ function showLoc(pos) {
   variable1.innerHTML =
     "Latitude: " +
     pos.coords.latitude +
-    "<br>Longitude: " +
+    "Longitude: " +
     pos.coords.longitude;
 }
 
@@ -92,10 +92,6 @@ function errHand(err) {
   }
 }
 
-
-
-
-
 async function show() {
 
   try {
@@ -112,30 +108,6 @@ async function show() {
 
 }
 
-let end = document.getElementById('end')
-
-let arr = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-
-function pandit(all) {
-  for (let i = 0; i < all.length - 1; i++) {
-    let div = document.createElement('div')
-    let heading = document.createElement('h1')
-    heading.innerText = arr[i];
-    let img = document.createElement('img')
-    if (arr[i] > 35) {
-      img.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShwvfH1GxkMPhguH4cfdQrVjPzW667L3S_Hg&usqp=CAU'
-    } else if (arr[i] < 35) {
-      img.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdQDVMzoLzoGQeZ13AdhA_Xlgz7l0Rnz9vag&usqp=CAU'
-    } else {
-      img.src = 'https://cdn.pixabay.com/photo/2016/03/18/15/07/slightly-cloudy-1265204__340.png'
-    }
-
-    let para = document.createElement('p')
-    para.innerText = `${all[i].temp.day}  °C`;
-    div.append(heading, img, para)
-    end.append(div)
-  }
-}
 
 
 
