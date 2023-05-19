@@ -76,8 +76,7 @@ function errHand(err) {
   switch (err.code) {
     case err.PERMISSION_DENIED:
       variable1.innerHTML =
-        "The application doesn't have the " +
-        "permission to make use of location services";
+        "Give location permission ";
       break;
     case err.POSITION_UNAVAILABLE:
       variable1.innerHTML = "The location of the device is uncertain";
