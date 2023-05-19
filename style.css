@@ -16,7 +16,6 @@ h1 {
   margin: auto;
   display: flex;
   align-items: center;
-  border: 1px solid red;
 }
 
 #container {
@@ -27,14 +26,12 @@ h1 {
 p {
   font-weight: bold;
   color: white;
-  border: 1px solid red;
 }
 
 #box1 {
   display: flex;
   justify-content: center;
   align-content: center;
-  border: 1px solid red;
 }
 
 input {
@@ -68,7 +65,6 @@ button {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  border:  1px solid red;
 }
 
 .geeks {
@@ -89,13 +85,11 @@ button {
   border-radius: 10px;
 }
 .mapouter{
-  border: 1px solid red;
   width: 100%;
 }
 @media (max-width: 500px) {
   body{
     text-align: center;
-    border: 2px solid red;
   }
   input{
     width: 70%;
